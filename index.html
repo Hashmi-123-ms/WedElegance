@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WedElegence — Wedding Event Management</title>
+  <meta name="description" content="WedElegence: book catering, rentals, photography and wedding halls for your perfect day." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">Wed<span>Elegence</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#booking" class="btn btn-small">Book Now</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <img class="hero-img" src="https://loremflickr.com/1600/1000/wedding,ceremony?lock=21" alt="Elegant wedding ceremony" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Wedding Event Management</p>
+      <h1>Your forever,<br /><em>beautifully planned.</em></h1>
+      <p class="sub">Catering, rentals, photography and halls — everything for your big day, booked in one place.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn">Plan My Wedding</a>
+        <a href="#services" class="btn btn-ghost">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="section-head">
+      <p class="eyebrow">What we offer</p>
+      <h2>Our Services</h2>
+      <p class="muted">Choose a service to see what's included and book it instantly.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card" data-service="Catering">
+        <div class="card-img"><img src="https://loremflickr.com/800/600/wedding,buffet,food?lock=31" alt="Wedding catering buffet" loading="lazy" /></div>
+        <div class="card-body">
+          <h3>Catering</h3>
+          <p>Traditional sadya, multi-cuisine buffets and live counters crafted by expert chefs.</p>
+          <ul>
+            <li>Veg &amp; non-veg menus</li>
+            <li>Live food counters</li>
+            <li>Welcome drinks &amp; desserts</li>
+          </ul>
+          <div class="card-foot">
+            <span class="price">from ₹450 <small>/ plate</small></span>
+            <button class="btn btn-small book-btn">Book</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-service="Rentals">
+        <div class="card-img"><img src="https://loremflickr.com/800/600/wedding,decoration,flowers?lock=42" alt="Wedding decor and rentals" loading="lazy" /></div>
+        <div class="card-body">
+          <h3>Rentals</h3>
+          <p>Stage décor, floral arches, furniture, lighting and sound — styled to your theme.</p>
+          <ul>
+            <li>Stage &amp; mandap décor</li>
+            <li>Chairs, tables &amp; linens</li>
+            <li>Lighting &amp; sound systems</li>
+          </ul>
+          <div class="card-foot">
+            <span class="price">from ₹25,000</span>
+            <button class="btn btn-small book-btn">Book</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-service="Photography">
+        <div class="card-img"><img src="https://loremflickr.com/800/600/wedding,photographer?lock=53" alt="Wedding photography" loading="lazy" /></div>
+        <div class="card-body">
+          <h3>Photography</h3>
+          <p>Candid photography, cinematic films, drone shots and premium albums.</p>
+          <ul>
+            <li>Candid &amp; traditional</li>
+            <li>Cinematic wedding film</li>
+            <li>Pre-wedding shoots</li>
+          </ul>
+          <div class="card-foot">
+            <span class="price">from ₹40,000</span>
+            <button class="btn btn-small book-btn">Book</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-service="Wedding Halls">
+        <div class="card-img"><img src="https://loremflickr.com/800/600/wedding,hall,banquet?lock=64" alt="Wedding banquet hall" loading="lazy" /></div>
+        <div class="card-body">
+          <h3>Wedding Halls</h3>
+          <p>Handpicked halls, convention centres and outdoor venues for every guest count.</p>
+          <ul>
+            <li>200 – 2000 guests</li>
+            <li>AC halls &amp; lawns</li>
+            <li>Parking &amp; bridal rooms</li>
+          </ul>
+          <div class="card-foot">
+            <span class="price">from ₹60,000 <small>/ day</small></span>
+            <button class="btn btn-small book-btn">Book</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== PACKAGES ===== -->
+  <section class="section alt" id="packages">
+    <div class="section-head">
+      <p class="eyebrow">Save more together</p>
+      <h2>Wedding Packages</h2>
+    </div>
+    <div class="packages">
+      <div class="package">
+        <h3>Silver</h3>
+        <p class="pkg-price">₹1.5L</p>
+        <ul><li>Hall for 300 guests</li><li>Veg catering</li><li>Basic stage décor</li><li>Traditional photography</li></ul>
+        <button class="btn btn-ghost-dark pkg-btn" data-pkg="Silver Package">Choose Silver</button>
+      </div>
+      <div class="package featured">
+        <span class="tag">Most loved</span>
+        <h3>Gold</h3>
+        <p class="pkg-price">₹3L</p>
+        <ul><li>Hall for 600 guests</li><li>Multi-cuisine buffet</li><li>Floral stage &amp; lighting</li><li>Candid photo + video</li></ul>
+        <button class="btn pkg-btn" data-pkg="Gold Package">Choose Gold</button>
+      </div>
+      <div class="package">
+        <h3>Platinum</h3>
+        <p class="pkg-price">₹6L</p>
+        <ul><li>Premium venue, 1000+ guests</li><li>Live counters &amp; desserts</li><li>Full theme décor</li><li>Cinematic film + drone</li></ul>
+        <button class="btn btn-ghost-dark pkg-btn" data-pkg="Platinum Package">Choose Platinum</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow">Moments we've made</p>
+      <h2>Gallery</h2>
+    </div>
+    <div class="gallery">
+      <img src="https://loremflickr.com/600/800/bride?lock=71" alt="Bride portrait" loading="lazy" />
+      <img src="https://loremflickr.com/600/400/wedding,rings?lock=72" alt="Wedding rings" loading="lazy" />
+      <img src="https://loremflickr.com/600/400/wedding,cake?lock=73" alt="Wedding cake" loading="lazy" />
+      <img src="https://loremflickr.com/600/800/wedding,couple?lock=74" alt="Wedding couple" loading="lazy" />
+      <img src="https://loremflickr.com/600/400/wedding,table?lock=75" alt="Reception table" loading="lazy" />
+      <img src="https://loremflickr.com/600/400/wedding,flowers?lock=76" alt="Wedding flowers" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ===== BOOKING ===== -->
+  <section class="section alt" id="booking">
+    <div class="section-head">
+      <p class="eyebrow">Reserve your date</p>
+      <h2>Book Your Event</h2>
+    </div>
+
+    <div class="booking-wrap">
+      <form id="bookingForm" class="booking-form" novalidate>
+        <div class="row">
+          <label>Full name<input type="text" name="name" required placeholder="Your name" /></label>
+          <label>Phone<input type="tel" name="phone" required placeholder="+91 98xxxxxxx" pattern="[0-9+\s-]{10,15}" /></label>
+        </div>
+        <div class="row">
+          <label>Email<input type="email" name="email" required placeholder="you@email.com" /></label>
+          <label>Wedding date<input type="date" name="date" id="dateInput" required /></label>
+        </div>
+        <div class="row">
+          <label>Guests<input type="number" name="guests" min="20" max="5000" required placeholder="e.g. 500" /></label>
+          <label>Location<input type="text" name="location" placeholder="City / venue area" /></label>
+        </div>
+
+        <fieldset>
+          <legend>Services needed</legend>
+          <div class="chips" id="serviceChips">
+            <label class="chip"><input type="checkbox" name="services" value="Catering" /> Catering</label>
+            <label class="chip"><input type="checkbox" name="services" value="Rentals" /> Rentals</label>
+            <label class="chip"><input type="checkbox" name="services" value="Photography" /> Photography</label>
+            <label class="chip"><input type="checkbox" name="services" value="Wedding Halls" /> Wedding Halls</label>
+          </div>
+        </fieldset>
+
+        <label>Package (optional)
+          <select name="package" id="packageSelect">
+            <option value="">Custom — pick services above</option>
+            <option>Silver Package</option>
+            <option>Gold Package</option>
+            <option>Platinum Package</option>
+          </select>
+        </label>
+
+        <label>Notes<textarea name="notes" rows="3" placeholder="Theme, cuisine preferences, anything else…"></textarea></label>
+
+        <p class="form-error" id="formError"></p>
+        <button type="submit" class="btn btn-full">Confirm Booking Request</button>
+      </form>
+
+      <aside class="my-bookings">
+        <h3>My Bookings</h3>
+        <p class="muted small">Saved on this device.</p>
+        <ul id="bookingList"><li class="empty">No bookings yet.</li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <a href="#home" class="logo">Wed<span>Elegence</span></a>
+    <p>Making every wedding elegant, effortless and unforgettable.</p>
+    <p class="small">📞 +91 00000 00000 · ✉️ hello@wedelegence.com</p>
+    <p class="small muted-light">© <span id="year"></span> WedElegence. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== SUCCESS MODAL ===== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <div class="modal-icon">💍</div>
+      <h3>Booking request received!</h3>
+      <p id="modalText"></p>
+      <button class="btn" id="modalClose">Lovely, thanks</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
